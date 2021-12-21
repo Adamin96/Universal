@@ -1,0 +1,81 @@
+.navbar
+  display: flex
+  align-items: center
+  justify-content: space-between
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background-color: $back-color
+  z-index: 100
+  &--article
+    background-color: #ffffff
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 70px
+  &__logo
+    width: 163px
+  &__menu
+    display: flex
+    justify-content: space-between
+    margin: 0 88px 0 0
+    padding: 0
+    list-style: none
+    width: 540px
+    font-family: $lato-900
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+  &__button
+    padding-top: 10px
+    padding-bottom: 10px
+    width: 261px
+    color: #ffffff
+    text-transform: uppercase
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    background-color: #656B70
+    border-radius: 10px
+    border: none
+    cursor: pointer
+    &:hover
+      background-color: $grey-85
+      font-weight: 700
+  &__menu-button
+    padding: 0
+    display: none
+    justify-content: space-between
+    flex-direction: column
+    width: 16px
+    height: 11px
+    border: none
+    background-color: $back-color
+    cursor: pointer
+    &--article
+      background-color: #ffffff
+
+.menu-button__line
+  width: 16px
+  height: 1px
+  background-color: #ffffff
+  &--article
+    background-color: $grey-85
+.menu
+  &__link
+    color: #ffffff
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+    &--article
+      color: #939699
+.back-to-top
+  position: fixed
+  bottom: 15px
+  right: 15px
+  font-size: 14px
+  line-height: 17px

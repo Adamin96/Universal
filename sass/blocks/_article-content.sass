@@ -1,0 +1,292 @@
+.article-content
+  position: relative
+  background-color: #ffffff
+  .container
+    position: relative
+  &-wrapper
+    padding: 59px 0 90px
+  &__text-wrapper
+    margin-left: 97px
+    font-size: 18px
+    line-height: 30px
+    width: 623px
+    color: #4B5157
+  &__main-letter
+    margin-top: 7px
+    margin-right: 16px
+    width: 84px
+    height: 75px
+    float: left
+  &__text
+    margin-top: 0
+    margin-bottom: 42px
+  &__text-bold
+    position: relative
+    z-index: 10
+  &__title
+    margin-top: 15px
+    margin-bottom: 30px
+    font-family: Roboto Slab
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: #262D33
+  &__quote
+    position: relative
+    margin-top: 50px
+    margin-bottom: 45px
+    font-family: Roboto Slab
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: #262D33
+    img
+      position: absolute
+      width: 70px
+      height: 70px
+      top: -20px
+      left: -20px
+  &__middle
+    display: flex
+    justify-content: space-between
+    align-items: start
+  &__tags
+    width: 653px
+    margin: 15px 97px 60px
+  &__tag
+    cursor: pointer
+    margin-right: 10px
+    padding: 7px 12px
+    font-family: $lato-900
+    font-size: 14px
+    line-height: 20px
+    text-align: center
+    color: #262D33
+    border-radius: 5px
+    border: 1px solid #D9DADB
+  &__support
+    width: 653px
+    padding: 35px 0
+    margin: 0 97px
+    border-top: 1px solid #D9DADB
+    &-title
+      margin-top: 0
+      margin-bottom: 25px
+      font-family: Roboto Slab
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: #262D33
+    &-button
+      display: flex
+      align-items: center
+      float: left
+      height: 40px
+      padding: 10px 22px
+      margin-right: 14px
+      background-color: #4592FF
+      border-radius: 20px
+      font-family: $lato-900
+      color: #ffffff
+      font-size: 14px
+      line-height: 20px
+      overflow: hidden
+      border: none
+      &:hover
+        background-color: #005fe3
+    &-text
+      margin-right: 8px
+    &-likes-num
+      color: #FFC4C9
+    &-shares-num
+      color: #BBC6FF
+    &-twitts-num
+      color: #C5E4FC
+  &__like
+    width: 17px
+    height: 15.6px
+    margin-right: 9.5px
+  &__share
+    width: 10px
+    margin-right: 13px
+  &__twitt
+    width: 18px
+    height: 18px
+    margin-right: 9px
+.right-panel
+  width: 263px
+  margin-top: 150px
+  margin-right: 97px
+  cursor: pointer
+  &__title
+    margin-top: -15px
+    margin-bottom: 20px
+    font-family: Roboto Slab
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: #262D33
+  &__image
+    width: 100%
+    border-radius: 10px
+    overflow: hidden
+  &__article-title
+    margin-top: 9px
+    margin-bottom: 5px
+    font-family: Roboto Slab
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    color: #262D33
+  &__text
+    margin-top: 0
+    margin-bottom: 20px
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+  &__statistics
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+  &__view
+    width: 15px
+    margin-right: 4px
+    margin-bottom: 2px
+    vertical-align: middle
+  &__comment
+    width: 13.5px
+    margin-right: 4.5px
+    margin-bottom: 2px
+    vertical-align: middle
+  &__views-number
+    margin-right: 10px
+.article-slider
+  position: relative
+  border-radius: 10px
+  overflow: hidden
+  margin-top: 15px
+  margin-bottom: 40px
+  &__image
+    height: 555px
+  &__button
+    z-index: 1
+    position: absolute
+    top: 248px
+    width: 60px
+    height: 60px
+    background-color: transparent
+    border: none
+    &--prev
+      left: 35px
+      background-image: url(../img/arrow-left-button.svg)
+    &--next
+      right: 35px
+      background-image: url(../img/arrow-right-button.svg)
+.slide-info
+  margin-top: -4px
+  padding: 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-left: 35px
+  padding-right: 0
+  height: 75px
+  border-left: 1px solid #D9DADB
+  border-right: 1px solid #D9DADB
+  border-bottom: 1px solid #D9DADB
+  overflow: hidden
+  border-radius: 0 0 10px 10px
+  &__text
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+  &__photograph
+    display: flex
+    align-items: center
+    height: 100%
+    width: 262px
+    border-left: 1px solid #D9DADB
+    &-avatar
+      margin-left: 30px
+      margin-right: 10px
+      width: 45px
+      height: 45px
+      border-radius: 50%
+      overflow: hidden
+    &-info
+      display: flex
+      flex-direction: column
+    &-name
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &-description
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+.writer
+  position: absolute
+  top: -103px
+  right: 96px
+  width: 264px
+  height: 298px
+  display: flex
+  flex-direction: column
+  align-items: center
+  border-radius: 10px
+  overflow: hidden
+  border: 1px solid #D9DADB
+  background-color: #ffffff
+  &__avatar
+    margin-top: 35px
+    margin-bottom: 15px
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    overflow: hidden
+  &__name
+    margin-bottom: 5px
+    font-family: Roboto Slab
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: #262D33
+  &__description
+    margin-bottom: 15px
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+  &__articles-num
+    margin-bottom: 20px
+    font-family: $lato-900
+    font-size: 14px
+    line-height: 20px
+    color: #262D33
+  &__link
+    display: block
+    padding: 15px 0
+    width: 100%
+    text-align: center
+    font-family: $lato-900
+    font-size: 14px
+    line-height: 20px
+    color: #262D33
+    border-top: 1px solid #D9DADB
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+.article-content__text:nth-child(4)
+  margin-bottom: 32px
+.article-content__text:nth-child(5)
+  margin-bottom: 30px
+.article-content__text:nth-child(6)
+  margin-bottom: 60px
+.article-content__text:nth-child(1)
+  margin-bottom: 31px
+.article-content__text-1:nth-child(2)
+  margin-bottom: 30px 
+.article-content__text-1:nth-child(3)
+  margin-bottom: 78px 
+.article-content__text-1:nth-child(6)
+  margin-bottom: 34px 
