@@ -1,0 +1,63 @@
+.thanks
+  height: 50vh
+  background-color: #262D33
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 70px
+    padding-top: 150px
+  &-name
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 20px
+    color: #ffffff
+  &-description
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 17px
+    line-height: 50px
+    color: #ffffff
+    margin-bottom: 50px
+  &-button
+    &__back
+      padding: 10px 25px
+      margin-right: 5px
+      font-family: "Lato-Black",sans-serif
+      height: 40px
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+      border-radius: 20px
+      background-color: #4592FF
+      border: none
+      cursor: pointer
+
+@media (min-width: 992px)
+  .thanks-button__back:hover
+    background-color: #005fe3
+
+@media (max-width: 650px)
+  .thanks
+    height: 30vh
+    &-wrapper
+      padding-top: 60px
+    &-name
+      font-size: 20px
+    &-description
+      font-size: 15px
+
+@media (max-width: 575px)
+  .thanks
+    &-wrapper
+      margin-top: 50px
+
+@media (max-width: 400px)
+  .thanks
+    &-name
+      font-size: 15px
+    &-description
+      font-size: 10px
